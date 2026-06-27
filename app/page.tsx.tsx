@@ -154,7 +154,12 @@ export default function Home() {
 
       {/* ── HEADER ── */}
       <div style={{ background: "linear-gradient(135deg, #0f172a 0%, #1e40af 100%)", borderRadius: 20, padding: "30px 34px", marginBottom: 20, color: "#fff" }}>
-        <div style={{ fontSize: 11, opacity: 0.55, letterSpacing: 2, textTransform: "uppercase", marginBottom: 5 }}>Market Voice AI V2</div>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 5 }}>
+          <div style={{ fontSize: 11, opacity: 0.55, letterSpacing: 2, textTransform: "uppercase" }}>Market Voice AI V2</div>
+          <a href="/report" style={{ fontSize: 12, background: "rgba(255,255,255,0.15)", color: "#fff", padding: "5px 14px", borderRadius: 20, textDecoration: "none", fontWeight: 600 }}>
+            📋 Báo cáo CEO →
+          </a>
+        </div>
         <h1 style={{ fontSize: 26, fontWeight: 800, margin: "0 0 4px" }}>Báo Cáo Quyết Định Kinh Doanh</h1>
         <p style={{ fontSize: 13, opacity: 0.7, margin: "0 0 22px" }}>Ngành Nội Thất · {report.period.label}</p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 10 }}>
